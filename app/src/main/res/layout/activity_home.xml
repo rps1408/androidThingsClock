@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center"
+    android:background="@drawable/night"
+
+    android:gravity="center|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:layout_gravity="top|center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/hIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/humidity_n" />
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/arimo_regular"
+                    android:gravity="center|left"
+                    android:text="00%"
+                    android:textAlignment="center"
+                    android:textColor="#CF3668"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/wind_n" />
+
+                <TextView
+
+                    android:id="@+id/wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/arimo_regular"
+                    android:gravity="center|left"
+                    android:text="00 km/h"
+                    android:textAlignment="center"
+                    android:textColor="#CF3668"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/vIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#CF3668"
+                    android:src="@drawable/visibility_n" />
+
+                <TextView
+
+                    android:id="@+id/visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/arimo_regular"
+                    android:gravity="center|left"
+                    android:text="00 km/h"
+                    android:textAlignment="center"
+                    android:textColor="#CF3668"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="442dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="440dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/hours"
+                    android:layout_width="167dp"
+                    android:layout_height="166dp"
+
+                    android:fontFamily="@font/arimo_regular"
+                    android:gravity="center|right"
+                    android:text="00"
+                    android:textColor="#CF3668"
+                    android:textSize="130dp" />
+
+                <TextView
+                    android:id="@+id/tiktik"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center|center"
+                    android:text=":"
+                    android:textColor="#CF3668"
+                    android:textSize="100dp" />
+
+                <TextView
+                    android:id="@+id/minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="166dp"
+
+                    android:fontFamily="@font/arimo_regular"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#CF3668"
+                    android:textSize="130dp" />
+
+                <LinearLayout
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ampm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/newfont"
+                        android:gravity="top|center
+"
+                        android:text="AM"
+                        android:textColor="#CF3668"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/arimo_wght"
+                        android:gravity="center|bottom"
+                        android:text="44"
+                        android:textColor="#CF3668"
+                        android:textSize="50dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp">
+
+                <TextView
+                    android:id="@+id/weekday"
+                    android:layout_width="188dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/arimo_semi_bold"
+                    android:gravity="center|right"
+                    android:text="Kkk"
+                    android:textColor="#CF3668"
+                    android:textSize="60dp" />
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/arimo_regular"
+                    android:gravity="top|left"
+                    android:text="34, Feb"
+
+                    android:textColor="#CF3668"
+                    android:textSize="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="159dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="25dp"
+                android:cropToPadding="false"
+                android:src="@drawable/w02d" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:fontFamily="@font/arimo_regular"
+                    android:text="Haze"
+                    android:textColor="#CF3668"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/arimo_regular"
+                    android:gravity="center|center_horizontal"
+                    android:text="00 C"
+
+                    android:textColor="#CF3668"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_gravity="bottom|bottom"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
